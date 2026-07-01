@@ -1,0 +1,29 @@
+# Local design references and unrelated desktop files
+stitch-export/
+*.lnk
+Screenshot*.png
+PROJECT.png
+roller.png
+01-roller.png
+*.jpg
+
+# Generated/temporary files
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Discarded design experiments retained locally
+assets/kiyari-dress-chroma-v3.png
+assets/kiyari-hero-stage-v3.png
+garden.css
+garden.js
+garden-continuous.css
+garden-continuous.js
+garden-global.js
+garden-liquid.css
+garden-liquid.js
+garden-natural.css
+garden-natural.js
+garden-off.js
+garden-static.css
+garden-static.js

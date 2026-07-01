@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="uz" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff8f7" />
+  <meta name="google" content="notranslate" />
+  <meta name="description" content="KIYARI — Toshkentdagi nafis ayollar kiyimlari butik." />
+  <title>KIYARI — Har ayolning o‘z uslubi bor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="nav-waves.css" />
+  <link rel="stylesheet" href="nav-organic.css" />
+  <link rel="stylesheet" href="garden-global.css" />
+  <link rel="stylesheet" href="garden-off.css" />
+</head>
+<body>
+  <div class="ambient-world" id="ambientWorld" aria-hidden="true"></div>
+  <header class="nav" id="top">
+    <a class="brand" href="#home">KIYARI</a>
+    <button class="menu-button" id="menuButton" aria-label="Menyuni ochish"><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks" aria-label="Asosiy navigatsiya">
+      <a href="#home" data-t="nav.home">Bosh sahifa</a><a href="#catalog" data-t="nav.catalog">Katalog</a>
+      <a href="#new" data-t="nav.new">Yangi kelganlar</a><a href="#popular" data-t="nav.popular">Ommabop</a>
+      <a href="#about" data-t="nav.about">Biz haqimizda</a><a href="#contact" data-t="nav.contact">Aloqa</a>
+    </nav>
+    <div class="nav-tools">
+      <div class="languages" aria-label="Tilni tanlang"><button data-lang="uz" class="active">UZ</button><button data-lang="ru">RU</button><button data-lang="en">EN</button></div>
+      <a class="heart-link" href="#favorites" aria-label="Sevimlilar">♡<b id="favoriteCount">0</b></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-scroll" id="home">
+      <div class="hero-stage full-bleed-hero">
+        <div class="hero-wash"></div><div class="particles" id="particles" aria-hidden="true"></div>
+        <div class="hero-copy premium-copy">
+          <p class="eyebrow">WOMEN’S FASHION · TASHKENT</p>
+          <h1><span data-t="hero.line1">Har ayolning</span><em data-t="hero.line2">o‘z uslubi bor</em></h1>
+          <p class="hero-sub" data-t="hero.sub">KIYARI bilan o‘zingizni ifoda eting</p>
+          <div class="hero-actions"><a class="button magnetic" href="#catalog" data-t="hero.catalog">Katalogni ko‘rish</a><a class="text-button" target="_blank" rel="noreferrer" href="https://t.me/KIYARI_UZ" data-t="hero.telegram">Telegramga o‘tish ↗</a></div>
+          <div class="hero-signature"><span>01</span><i></i><small>KIYARI<br>WOMENSWEAR</small></div>
+        </div>
+        <div class="hero-visual cinematic-stage simple-cinematic">
+          <img class="hero-master" alt="KIYARI qizil, pushti va binafsha kutyur ko‘ylagi" src="assets/kiyari-hero-couture-v2.png" />
+          <div class="hero-light-sweep"></div><div class="hero-vignette"></div>
+          <div class="corner-bloom bloom-tl">✿ ❀ ✦</div><div class="corner-bloom bloom-tr">❀ ✿</div><div class="corner-bloom bloom-bl">✦ ❀ ✿</div><div class="corner-bloom bloom-br">✿ ❀</div>
+          <span class="petal p1">❀</span><span class="petal p2">❀</span><span class="petal p3">•</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section catalog" id="catalog">
+      <div class="section-heading reveal"><p class="eyebrow">KIYARI COLLECTION</p><h2 data-t="catalog.title">Katalog</h2><em data-t="catalog.sub">Sevimli uslubingizni toping</em></div>
+      <div class="filters" id="filters"></div><div class="product-grid" id="catalogGrid"></div>
+    </section>
+    <section class="section tinted" id="favorites"><div class="section-heading reveal"><p class="eyebrow">SAVED FOR YOU</p><h2 data-t="favorites.title">Mening sevimlilarim</h2></div><div class="product-grid compact" id="favoritesGrid"></div></section>
+    <section class="section" id="new"><div class="section-heading reveal"><p class="eyebrow">FRESH EDIT</p><h2 data-t="new.title">Yangi kelganlar</h2><em data-t="new.sub">Siz uchun eng yangi kolleksiyalar</em></div><div class="product-grid editorial" id="newGrid"></div></section>
+    <section class="section tinted" id="popular"><div class="section-heading reveal"><p class="eyebrow">MOST LOVED</p><h2 data-t="popular.title">Ommabop mahsulotlar</h2><em data-t="popular.sub">Xaridorlarimiz eng ko‘p tanlagan liboslar</em></div><div class="product-grid compact" id="popularGrid"></div></section>
+    <section class="section" id="trending"><div class="section-heading reveal"><p class="eyebrow">TRENDING NOW</p><h2 id="trendingTitle">Trenddagi liboslar</h2><em id="trendingSubtitle">Hozir eng ko‘p e’tibor tortayotgan uslublar</em></div><div class="product-grid compact" id="trendingGrid"></div></section>
+    <section class="section tinted" id="kids"><div class="section-heading reveal"><p class="eyebrow">LITTLE KIYARI</p><h2 id="kidsTitle">Kids kolleksiya</h2><em id="kidsSubtitle">Kichik malikalar uchun nafis tanlov</em></div><div class="product-grid compact" id="kidsGrid"></div></section>
+
+    <section class="section about" id="about">
+      <div class="about-copy reveal"><p class="eyebrow">OUR STORY</p><h2 data-t="about.title">Biz haqimizda</h2><em data-t="about.sub">Har detalda nafislik</em><p data-t="about.text">KIYARI — zamonaviy va nafis ayollar kiyimlari do‘koni. Biz har bir ayol o‘z uslubini topishi, o‘zini chiroyli, ishonchli va betakror his qilishi uchun sifatli liboslar tanlaymiz.</p><div class="values"><span>◇ <b data-t="about.quality">Premium sifat</b></span><span>✦ <b data-t="about.design">Zamonaviy dizayn</b></span><span>♡ <b data-t="about.style">Shaxsiy uslub</b></span></div></div>
+      <div class="about-image reveal"><img loading="lazy" alt="KIYARI nafis moda hikoyasi" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgNScyomn8qQQD9tuo5VOeFLe4j0FKyf-4IsXR2NYdDJcwVCEez-9MWUdXUmgLA6HsmlRhND5VA4uk9VG9hsLMFBf79Fg-PF1-H_scuuR6c5agPLq_wge8-Qcc_5qeEoIckrJfZ8oQxTMtDrkx0FXOyFSFYITEsvkQa3c5C212cPdjbLBtRgnAYNPSNzQ1eQ4KvBX1BRDIo6LqbDcQejavo-vP4JXLskEIM-m6d1upMnIR3QOp0WJYtX8EBAXzFfW7bFMX5hNGixJp"/><span data-t="about.note">Har bir detalda mehr bor</span></div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div><p class="eyebrow">COME SAY HELLO</p><h2 data-t="contact.title">Biz bilan bog‘laning</h2><p>✦ <span data-t="contact.address">Toshkent, O‘zbekiston</span></p><p>◷ 10:00 – 22:00</p><div class="socials"><a class="button" href="https://t.me/KIYARI_UZ" target="_blank">Telegram ↗</a><a class="button outline" href="https://instagram.com/kiyari.uz" target="_blank">Instagram ↗</a></div></div>
+      <form id="contactForm"><label><span data-t="contact.name">Ismingiz</span><input required name="name"></label><label><span data-t="contact.phone">Telefon raqamingiz</span><input required name="phone" inputmode="tel"></label><label><span data-t="contact.message">Xabaringiz</span><textarea required name="message"></textarea></label><button class="button" data-t="contact.send">Yuborish</button></form>
+    </section>
+  </main>
+
+  <footer><div><a class="brand light" href="#top">KIYARI</a><p data-t="footer.phrase">Har ayol go‘zalligini KIYARI bilan kashf eting.</p></div><div><h3 data-t="nav.catalog">Katalog</h3><a href="#new" data-t="nav.new">Yangi kelganlar</a><a href="#popular" data-t="nav.popular">Ommabop</a><a href="#trending">Trend</a><a href="#kids">Kids</a><a href="#favorites" data-t="nav.favorites">Sevimlilar</a></div><div><h3 data-t="footer.brand">Brend</h3><a href="#about" data-t="nav.about">Biz haqimizda</a><a href="#contact" data-t="nav.contact">Aloqa</a><button class="admin-link" id="adminOpen" data-t="nav.admin">Administrator uchun</button></div><small>© 2026 KIYARI. <span data-t="footer.rights">Barcha huquqlar himoyalangan.</span></small></footer>
+  <button class="admin-fab" type="button" onclick="document.querySelector('#adminDialog').showModal()" aria-label="Admin panelni ochish">K</button>
+
+  <dialog id="adminDialog"><div class="modal-head"><div><small>KIYARI BOUTIQUE</small><h2 data-t="admin.title">Admin panel</h2></div><button class="close" id="adminClose" aria-label="Yopish">×</button></div><div id="loginView" class="modal-body"><p data-t="admin.login">Mahsulotlarni boshqarish uchun parolni kiriting.</p><label><span data-t="admin.password">Parol</span><input id="adminPassword" type="password"></label><button class="button" id="adminLogin" data-t="admin.enter">Kirish</button></div><form id="productForm" class="modal-body admin-form" hidden><input type="hidden" name="id"><label><span data-t="admin.name">Mahsulot nomi</span><input required name="name"></label><label><span data-t="admin.category">Turkum</span><select name="category"><option value="women">Ayollar</option><option value="dresses">Ko‘ylaklar</option><option value="sets">To‘plamlar</option><option value="kids">Bolalar</option><option value="accessories">Aksessuarlar</option></select></label><div class="form-row"><label><span data-t="admin.price">Hozirgi narxi</span><input required name="price" type="number"></label><label><span data-t="admin.oldPrice">Eski narxi</span><input name="oldPrice" type="number"></label></div><label><span>Chegirma %</span><input name="discount" type="number" min="0" max="99"></label><label><span data-t="admin.image">Mahsulot rasmi</span><input name="image" type="file" accept="image/*"></label><label class="full-field"><span>Mahsulot tavsifi</span><textarea name="description" placeholder="Mato, bichim va mahsulot haqida..."></textarea></label><label><span data-t="admin.sizes">O‘lchamlar (S,M,L)</span><input name="sizes"></label><label><span data-t="admin.stock">Ombordagi soni</span><input name="stock" type="number" value="1"></label><fieldset><legend>Qaysi bo‘limlarda ko‘rinsin?</legend><label><input type="checkbox" name="popular"> Popular</label><label><input type="checkbox" name="trending"> Trending</label><label><input type="checkbox" name="kids"> Kids</label><label><input type="checkbox" name="isNew"> New Stock</label></fieldset><button class="button" data-t="admin.save">Mahsulotni e’lon qilish</button><div id="adminProducts"></div></form></dialog>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script><script src="app.js"></script><script src="scarlet.js"></script><script src="hero-timing.js"></script><script src="store-admin.js"></script><script src="nav-state.js"></script>
+</body>
+</html>
