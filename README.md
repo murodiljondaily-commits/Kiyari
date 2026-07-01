@@ -1,6 +1,6 @@
 # KIYARI
 
-Premium multilingual women’s fashion storefront for KIYARI, Tashkent.
+Premium multilingual women's fashion storefront for KIYARI, Tashkent.
 
 ## Run locally
 
